@@ -1,0 +1,43 @@
+import { Answers, Question } from "@/lib/types";
+import { Button } from "./ui/button";
+
+interface QuestionNavigatorProps {
+  questions: Question[];
+  currentQuestion: number;
+  answers: Answers;
+  onNavigate: (index: number) => void;
+}
+
+const QuestionNavigator: React.FC<QuestionNavigatorProps> = ({
+  questions,
+  currentQuestion,
+  answers,
+  onNavigate
+}) => {
+  return (
+    <div className="fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 px-4 py-4 z-50 shadow-lg">
+      <h4 className="text-lg font-semibold text-slate-800 mb-4">
+        Lista e pyetjeve
+      </h4>
+      <div className="grid grid-cols-5 gap-2">
+        {questions.map((q, idx) => (
+          <Button
+            key={q.id}
+            onClick={() => onNavigate(idx)}
+            className={`font-semibold transition-all ${
+              currentQuestion === idx
+                ? "bg-indigo-600 text-white"
+                : answers[q.id] !== undefined
+                ? "bg-green-100 text-green-700"
+                : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+            }`}
+          >
+            {idx + 1}
+          </Button>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default QuestionNavigator;
