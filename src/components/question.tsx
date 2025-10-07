@@ -1,5 +1,6 @@
 import { Question } from "@/lib/types";
-import { Button } from "./ui/button";
+import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 interface QuestionProps {
   question: Question;
@@ -7,16 +8,20 @@ interface QuestionProps {
   onSelectAnswer: (answerIdx: number) => void;
 }
 
-const QuestionComponent: React.FC<QuestionProps> = ({ question, selectedAnswer, onSelectAnswer }) => {
+const QuestionComponent: React.FC<QuestionProps> = ({
+  question,
+  selectedAnswer,
+  onSelectAnswer,
+}) => {
   return (
     <div className="bg-slate-50 rounded-xl p-4 mt-4">
       <h3 className="text-lg font-bold text-slate-800 mb-4">
         {question.question}
       </h3>
 
-      <div className="flex items-center gap-8">
+      <div className="flex items-start gap-8">
         {question.image && (
-          <div className="mb-6 rounded-lg overflow-hidden w-1/3">
+          <div className="mb-6 rounded-lg overflow-hidden min-w-[320px]">
             <img
               src={question.image}
               alt="Question illustration"
@@ -25,24 +30,43 @@ const QuestionComponent: React.FC<QuestionProps> = ({ question, selectedAnswer, 
           </div>
         )}
 
-      <div className="flex-grow">
-        {question.options.map((option, idx) => (
-          <Button
-            key={idx}
-            onClick={() => onSelectAnswer(idx)}
-            className={`w-full text-base justify-start ${
-              selectedAnswer === idx
-                ? ''
-                : 'bg-slate-50 text-slate-800 hover:bg-slate-100'
-            }`}
-          >
-            <span className="font-semibold mr-3">
-              {String.fromCharCode(65 + idx)}.
-            </span>
-            {option}
-          </Button>
-        ))}
-      </div>
+        {/* Options */}
+        <div className="flex-grow flex flex-col gap-3">
+          {question.options.map((option, idx) => {
+            const isSelected = selectedAnswer === idx;
+            return (
+              <Card
+                key={idx}
+                onClick={() => onSelectAnswer(idx)}
+                className={cn(
+                  "relative flex flex-row items-center gap-4 rounded-xl border transition-all cursor-pointer p-4",
+                  isSelected
+                    ? "border-blue-500 bg-blue-50 shadow-sm"
+                    : "border-slate-200 hover:border-slate-300 bg-white"
+                )}
+              >
+                {/* Gray radio ring */}
+                <div>
+                  <span
+                  className={'h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors border-gray-300'}
+                >
+                  {isSelected && (
+                    <span className="h-2.5 w-2.5 bg-blue-700 rounded-full" />
+                  )}
+                </span>
+                </div>
+
+                {/* Option text */}
+                <p className="text-slate-800 text-base leading-snug">
+                  <span className="font-semibold mr-1">
+                    {String.fromCharCode(65 + idx)}.
+                  </span>
+                  {option}
+                </p>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
