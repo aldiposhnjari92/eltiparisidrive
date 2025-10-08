@@ -9,7 +9,7 @@ import TestInProgress from "@/components/testInProgress";
 import { shuffleArray } from "@/lib/utils";
 
 const DashboardView = () => {
-    const [selectedTest, setSelectedTest] = useState<Test | null>(null);
+  const [selectedTest, setSelectedTest] = useState<Test | null>(null);
   const [shuffledQuestions, setShuffledQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<number>(0);
   const [answers, setAnswers] = useState<Answers>({});
@@ -17,7 +17,6 @@ const DashboardView = () => {
   const [isFinished, setIsFinished] = useState<boolean>(false);
   const [timerActive, setTimerActive] = useState<boolean>(false);
 
-  // Timer effect
   useEffect(() => {
     if (timerActive && timeLeft > 0 && !isFinished) {
       const timer = setInterval(() => {
@@ -35,20 +34,21 @@ const DashboardView = () => {
   }, [timerActive, timeLeft, isFinished]);
 
   const startTest = (test: Test): void => {
-    const shuffled = shuffleArray(test.questions);
-    setSelectedTest(test);
-    setShuffledQuestions(shuffled);
-    setCurrentQuestion(0);
-    setAnswers({});
-    setTimeLeft(50 * 60);
-    setIsFinished(false);
-    setTimerActive(true);
-  };
+  const shuffled = shuffleArray(test.questions);
 
-  const selectAnswer = (questionId: number, answerIndex: number): void => {
+  setSelectedTest(test);
+  setShuffledQuestions(shuffled);
+  setCurrentQuestion(0);
+  setAnswers({});
+  setTimeLeft(50 * 60);
+  setIsFinished(false);
+  setTimerActive(true);
+};
+
+  const selectAnswer = (questionId: number, answerText: string): void => {
     setAnswers(prev => ({
       ...prev,
-      [questionId]: answerIndex
+      [questionId]: answerText.trim()
     }));
   };
 
@@ -67,12 +67,10 @@ const DashboardView = () => {
     setTimerActive(false);
   };
 
-// Test selection screen
   if (!selectedTest) {
     return <TestSelection tests={pyetje} onSelectTest={startTest} />;
   }
 
-  // Results screen
   if (isFinished) {
     return (
       <ResultsScreen
@@ -83,7 +81,6 @@ const DashboardView = () => {
     );
   }
 
-  
   return (
     <TestInProgress
       test={{ ...selectedTest, questions: shuffledQuestions }}
@@ -96,7 +93,7 @@ const DashboardView = () => {
       onNext={() => setCurrentQuestion(prev => prev + 1)}
       onFinish={finishTest}
     />
-  )
-}
+  );
+};
 
-export default DashboardView
+export default DashboardView;

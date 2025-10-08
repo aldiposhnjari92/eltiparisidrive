@@ -3,6 +3,7 @@ export interface Question {
   question: string;
   options: string[];
   correctAnswer: number;
+  correctAnswerText?: string; // Add this to track the actual correct answer
   image: string | null;
 }
 
@@ -13,7 +14,7 @@ export interface Test {
 }
 
 export interface Answers {
-  [questionId: number]: number;
+  [questionId: number]: string;
 }
 
 export interface Score {

@@ -12,8 +12,17 @@ interface ResultsScreenProps {
 const ResultsScreen: React.FC<ResultsScreenProps> = ({ test, answers, onBackToMenu }) => {
   const calculateScore = (): Score => {
     let correct = 0;
-    test.questions.forEach(q => {
-      if (answers[q.id] === q.correctAnswer) {
+    
+    test.questions.forEach((q) => {
+      const userAnswerText = answers[q.id];
+      const correctAnswerText = q.correctAnswerText || q.options[q.correctAnswer];
+      
+      const trimmedUserAnswer = userAnswerText?.trim();
+      const trimmedCorrectAnswer = correctAnswerText?.trim();
+      
+      const isCorrect = trimmedUserAnswer === trimmedCorrectAnswer;
+      
+      if (isCorrect) {
         correct++;
       }
     });
@@ -41,11 +50,10 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ test, answers, onBackToMe
             {test.questions.map((q, idx) => (
               <AnswerReview
                 key={q.id}
-                question={q.question}
+                question={q}
                 index={idx}
                 userAnswer={answers[q.id]}
                 correctAnswer={q.correctAnswer}
-                options={q.options}
               />
             ))}
           </div>
@@ -54,7 +62,7 @@ const ResultsScreen: React.FC<ResultsScreenProps> = ({ test, answers, onBackToMe
             onClick={onBackToMenu}
             variant={"outline"}
             className="w-full"
-            >
+          >
             Shko tek testet
           </Button>
         </div>

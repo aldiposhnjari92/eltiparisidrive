@@ -19,7 +19,7 @@ const TestSelection: React.FC<TestSelectionProps> = ({ tests, onSelectTest }) =>
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="flex flex-wrap gap-4">
           {tests.map(test => (
             <TestCard key={test.id} test={test} onStart={onSelectTest} />
           ))}

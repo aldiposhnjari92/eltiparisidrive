@@ -10,12 +10,13 @@ interface TestInProgressProps {
   currentQuestion: number;
   answers: Answers;
   timeLeft: number;
-  onSelectAnswer: (questionId: number, answerIdx: number) => void;
+  onSelectAnswer: (questionId: number, answerText: string) => void; // Changed to string
   onNavigate: (index: number) => void;
   onPrevious: () => void;
   onNext: () => void;
   onFinish: () => void;
 }
+
 
 const TestInProgress: React.FC<TestInProgressProps> = ({
   test,
@@ -30,8 +31,8 @@ const TestInProgress: React.FC<TestInProgressProps> = ({
 }) => {
   const currentQ = test.questions[currentQuestion];
   
-  // Check if all questions have been answered
   const allQuestionsAnswered = test.questions.every(q => answers[q.id] !== undefined);
+
 
   return (
     <div className="">
@@ -64,12 +65,12 @@ const TestInProgress: React.FC<TestInProgressProps> = ({
           <QuestionComponent
             question={currentQ}
             selectedAnswer={answers[currentQ.id]}
-            onSelectAnswer={(answerIdx) => onSelectAnswer(currentQ.id, answerIdx)}
+            onSelectAnswer={(answerText) => onSelectAnswer(currentQ.id, answerText)} // Pass text, not index
           />
         </div>
 
         {/* Navigation */}
-        <div className="bg-slate-50 mb-6 p-4 rounded-md">
+        <div>
             <NavigationButtons
               currentQuestion={currentQuestion}
               totalQuestions={test.questions.length}

@@ -4,8 +4,8 @@ import { cn } from "@/lib/utils";
 
 interface QuestionProps {
   question: Question;
-  selectedAnswer: number | undefined;
-  onSelectAnswer: (answerIdx: number) => void;
+  selectedAnswer: string | undefined;
+  onSelectAnswer: (answerText: string) => void;
 }
 
 const QuestionComponent: React.FC<QuestionProps> = ({
@@ -33,11 +33,13 @@ const QuestionComponent: React.FC<QuestionProps> = ({
         {/* Options */}
         <div className="flex-grow flex flex-col gap-3">
           {question.options.map((option, idx) => {
-            const isSelected = selectedAnswer === idx;
+            const trimmedOption = option.trim();
+            const isSelected = selectedAnswer === trimmedOption;
+            
             return (
               <Card
                 key={idx}
-                onClick={() => onSelectAnswer(idx)}
+                onClick={() => onSelectAnswer(trimmedOption)}
                 className={cn(
                   "relative flex flex-row items-center gap-4 rounded-xl border transition-all cursor-pointer p-4",
                   isSelected
@@ -45,18 +47,16 @@ const QuestionComponent: React.FC<QuestionProps> = ({
                     : "border-slate-200 hover:border-slate-300 bg-white"
                 )}
               >
-                {/* Gray radio ring */}
                 <div>
                   <span
-                  className={'h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors border-gray-300'}
-                >
-                  {isSelected && (
-                    <span className="h-2.5 w-2.5 bg-blue-700 rounded-full" />
-                  )}
-                </span>
+                    className={'h-5 w-5 rounded-full border-2 flex items-center justify-center transition-colors border-gray-300'}
+                  >
+                    {isSelected && (
+                      <span className="h-2.5 w-2.5 bg-blue-700 rounded-full" />
+                    )}
+                  </span>
                 </div>
 
-                {/* Option text */}
                 <p className="text-slate-800 text-base leading-snug">
                   <span className="font-semibold mr-1">
                     {String.fromCharCode(65 + idx)}.
