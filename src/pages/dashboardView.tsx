@@ -4,9 +4,9 @@ import { Answers, Question, Test } from "@/lib/types";
 import { useEffect, useState } from "react";
 import TestSelection from "./testSelectionView";
 import ResultsScreen from "./resultsView";
-import { pyetje } from "@/lib/pyetjet";
 import TestInProgress from "@/components/testInProgress";
 import { shuffleArray } from "@/lib/utils";
+import pyetje from "@/lib/pyetjet";
 
 const DashboardView = () => {
   const [selectedTest, setSelectedTest] = useState<Test | null>(null);
