@@ -15,7 +15,7 @@ const QuestionNavigator: React.FC<QuestionNavigatorProps> = ({
   onNavigate
 }) => {
   return (
-    <div className="md:fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 px-4 py-3 z-50 shadow-lg max-h-[15dvh] md:max-h-auto overflow-auto">
+    <div className="fixed bottom-0 left-0 w-full bg-white border-t border-slate-200 px-4 py-3 z-50 shadow-lg max-h-[15dvh] md:max-h-auto overflow-auto">
       {/* <h4 className="text-lg font-semibold text-slate-800 mb-4">
         Lista e pyetjeve
       </h4> */}
