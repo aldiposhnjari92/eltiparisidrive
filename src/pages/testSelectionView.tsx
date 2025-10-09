@@ -8,7 +8,7 @@ interface TestSelectionProps {
 
 const TestSelection: React.FC<TestSelectionProps> = ({ tests, onSelectTest }) => {
   if (!tests || !Array.isArray(tests)) {
-    return <div>Loading...</div>;
+    return <div>Duke u hapur...</div>;
   }
   return (
     <div className="s">

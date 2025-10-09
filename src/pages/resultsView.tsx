@@ -11,7 +11,7 @@ interface ResultsScreenProps {
 
 const ResultsScreen: React.FC<ResultsScreenProps> = ({ test, answers, onBackToMenu }) => {
   if (!test || !test.questions) {
-    return <div>Loading...</div>;
+    return <div>Duke u hapur...</div>;
   }
 
   const calculateScore = (): Score => {

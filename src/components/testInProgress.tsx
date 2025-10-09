@@ -9,7 +9,6 @@ interface TestInProgressProps {
   test: Test;
   currentQuestion: number;
   answers: Answers;
-  timeLeft: number;
   onSelectAnswer: (questionId: number, answerText: string) => void; // Changed to string
   onNavigate: (index: number) => void;
   onPrevious: () => void;
@@ -22,7 +21,6 @@ const TestInProgress: React.FC<TestInProgressProps> = ({
   test,
   currentQuestion,
   answers,
-  timeLeft,
   onSelectAnswer,
   onNavigate,
   onPrevious,
@@ -43,7 +41,6 @@ const TestInProgress: React.FC<TestInProgressProps> = ({
             <h2 className="text-lg font-bold text-slate-800">
               {test.name}
             </h2>
-            <Timer timeLeft={timeLeft} />
           </div>
           <ProgressBar current={currentQuestion} total={test.questions.length} />
           
