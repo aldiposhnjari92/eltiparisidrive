@@ -1,6 +1,6 @@
 import { Test } from "./types";
 
-export const pyetje: Test[] = [
+const pyetje: Test[] = [
   {
     id: 1,
     name: "Testi 1",
@@ -822,3 +822,5 @@ export const pyetje: Test[] = [
     ],
   },
 ];
+
+export default pyetje
