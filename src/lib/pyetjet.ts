@@ -821,6 +821,82 @@ const pyetje: Test[] = [
       },
     ],
   },
+  {
+    id: 2,
+    name: "Testi 2",
+    questions: [
+      {
+        id: 1,
+        question: "Nga na vjen rreziku ne kete situate?",
+        options: [
+          "Nga mjetet para nesh",
+          "Nga mjetet qe na vijne perballe",
+          "Nga mjetet qe na vijne nga pas",
+          "Nga mjetet qe na vijne nga ana e djathte"
+        ],
+        correctAnswer: 2,
+        image: "/assets/images/test-2/pyetje-1.jpeg",
+      },
+      {
+        id: 2,
+        question: "Cfare ndalohet pas kesaj tabele?",
+        options: [
+          "Ndalohet qendrimi ne datat tek te muajit",
+          "Ndalohet parkimi ne datat cift te muajit",
+          "Ndalohet parkimi ne datat tek te muajit",
+          "Ndalohet qendrimi ne datat cift te muajit"
+        ],
+        correctAnswer: 2,
+        image: "/assets/images/test-2/pyetje-2.jpeg",
+      },
+      {
+        id: 3,
+        question: "Ne cilen date lejohet parkimi pa pagese pas tabeles?",
+        options: [
+          "25 gusht ne oren 09.00",
+          "19 gusht ne oren 16.00",
+          "13 gusht ne oren 18.00",
+          "4 gusht ne oren 15.00"
+        ],
+        correctAnswer: 2,
+        image: "/assets/images/test-2/pyetje-3.jpeg",
+      },
+      {
+        id: 4,
+        question: "Jeni duke ngare ne nje rruge me nje drejtim dhe shikoni kete shenje rrugore para jush.Cfare nenkupton kjo shenje?",
+        options: [
+          "Se shpejti une mundet te takoj automjete qe qarkullojne ne drejtim te kundert",
+          "Automjetet nga drejtimi i kundert duhet te me japin mua perparesi kalimi",
+          "Paralajmerim per trafik qe kryqezohet me ne",
+          "Une duhet tu jap perparesi automjeteve nga drejtimi i kundert"
+        ],
+        correctAnswer: 0,
+        image: "/assets/images/test-2/pyetje-4.jpeg",
+      },
+      {
+        id: 5,
+        question: "Si duhet te veprojme pas kesaj shenje rrugore?",
+        options: [
+          "Une duhet te perdor rregullin e gershetimit me trafikun tjeter",
+          "Une duhet tu jap perparesi automjeteve nga ana e majte",
+          "Une duhet tu jap perparesi automjeteve nga ana e djathte"
+        ],
+        correctAnswer: 0,
+        image: "/assets/images/test-2/pyetje-5.jpeg",
+      },
+      {
+        id: 6,
+        question: "Si duhet te veproni pasi te kaloni kete shenje rrugore?",
+        options: [
+          "Mbaj te njejten shpejtesi dhe e drejtoj shikimin ne rruge me afer vetures se zakonisht",
+          "Ul shpejtesine dhe e drejtoj shikimin ne anen e rruges me shpesh se zakonisht",
+          "Mbaj te njejten shpejtesi dhe e drejtoj shikimin ne rruge shume me perpara se zakonisht"
+        ],
+        correctAnswer: 1,
+        image: "/assets/images/test-2/pyetje-6.jpeg",
+      }
+    ]
+  }
 ];
 
 export default pyetje

@@ -19,13 +19,13 @@ const QuestionComponent: React.FC<QuestionProps> = ({
         {question.question}
       </h3>
 
-      <div className="flex items-start gap-8">
+      <div className="flex flex-col md:flex-row items-start gap-8">
         {question.image && (
-          <div className="mb-6 rounded-lg overflow-hidden min-w-[320px]">
+          <div className="mb-6 rounded-lg overflow-hidden min-w-[300px]">
             <img
               src={question.image}
               alt="Question illustration"
-              className="w-full h-[320px] object-cover"
+              className="w-full h-[300px] object-cover aspect-auto"
             />
           </div>
         )}
