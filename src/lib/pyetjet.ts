@@ -37,7 +37,7 @@ const pyetje: Test[] = [
           "Eshte e lejuar te bej parakalimin ne anen e majte ose te djathte ne varesi te situates.",
           "Gjithmone jam i detyruar te bej parakalimin ne anen e majte",
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image:
           "/assets/images/sinjalistika/rruga-me-kalime--ne-te-djathtas.jpg",
       },
@@ -49,7 +49,7 @@ const pyetje: Test[] = [
           "Une gjithmon duhet te kaloj para se te hyj ne rrethrrotullim.",
           "Une kam detyrim tu jap perparesi automjeteve qe gjenden brenda ne rrethrrotullim",
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -73,7 +73,7 @@ const pyetje: Test[] = [
           "Diten e Pashkeve",
           "Diten e Festes se Mesveres"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -85,7 +85,7 @@ const pyetje: Test[] = [
           "Une rrezikoj te me terhiqet patenta nese largohem nga vendodhja pa kontaktuar pronarin e makines.",
           "Mjafton qe une te kontaktoj pronarin e makines kur te arrij ne shtepi."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -97,7 +97,7 @@ const pyetje: Test[] = [
           "Sinjalizimi i ndritshem i treguesit te djathte te drejtimit dhe dritat e parkimit",
           "Sinjalizimi i ndritshem i rrezikut dhe dritat e parkimit."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },{
         id: 9,
@@ -108,7 +108,7 @@ const pyetje: Test[] = [
           "1 nentor - 31 mars",
           "1 nentor - 30 prrill"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },{
         id: 10,
@@ -130,7 +130,7 @@ const pyetje: Test[] = [
           "E ndaloj makinen dhe bej nje pauze per te fjetur pak.",
           "E zvogeloj shpejtesine per te rritur aftesine time reaguese."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -142,7 +142,7 @@ const pyetje: Test[] = [
           "Po, mund te behet me e veshtire per te manovruar automjetin.",
           "Po, kjo mund te shkaktoje qe disa shofere te marrin rreziqe me te medha."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -162,7 +162,7 @@ const pyetje: Test[] = [
           "Nese rimorkio ka goma me thumba, duhet edhe makina te kete goma me thumba.",
           "Nese makina ka goma me thumba, duhet edhe rimorkio te kete goma me thumba."
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -174,7 +174,7 @@ const pyetje: Test[] = [
           "Po, nese nuk ka trafik nga prapa.",
           "Po, nese shpejtesia maksimale e lejuar ne autostrade eshte 70/h."
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },{
         id: 16,
@@ -185,7 +185,7 @@ const pyetje: Test[] = [
           "Njeriu ben levizje me te vogla dhe me te qeta ne timon.",
           "Ka nje rrezik me te madh qe te shkaktohet shikimi tunelor."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -209,7 +209,7 @@ const pyetje: Test[] = [
           "Sistemi i kunder-rreshqites pushon te funxionoje ne siperfaqe jo te rrafsheta te rruges.",
           "Shperndarja e frenimit te makines behet ne menyre te gabuar."
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -221,7 +221,7 @@ const pyetje: Test[] = [
           "Qe nje shufer transferon forcen e frenimit.",
           "Qe nje leng frenimi transferon forcen e frenimit."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -245,7 +245,7 @@ const pyetje: Test[] = [
           "Kur kthehem ne te djathte ne nje rruge 90-she.",
           "Kur kthehem ne te majte ne nje rruge 90-she."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -268,7 +268,7 @@ const pyetje: Test[] = [
           "Kur gjithmone ngasim me shpejtesi te larte per te ndjekur ritmin e trafikut",
           "Kur gjithmon e pershtasim shpejtesine per te qene te pergatitur per vepruar ne situata kritike"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -279,7 +279,7 @@ const pyetje: Test[] = [
           "30km/h",
           "40km/h",
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -291,7 +291,7 @@ const pyetje: Test[] = [
           "Po, me glikol.",
           "Po, T-alkol(alkol teknik)."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -303,7 +303,7 @@ const pyetje: Test[] = [
           "Qe une ta mbaj shikimin tim te levizshem dhe te drejtuar shume perpara pergjate rruges.",
           "Qe une gjithmon te jem gati per te frenuar ne menyre qe une te mund te ndaloj kur te jete e nevojshme."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -315,7 +315,7 @@ const pyetje: Test[] = [
           "Doktori qe me shkruan ilacin.",
           "Une vete."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -326,7 +326,7 @@ const pyetje: Test[] = [
           "Nje makine qe terheq me rrota te pasme zakonisht ka aftesi kapese me te mira ne pjerrtesi te kundert.",
           "Nje makine qe terheq me rrota te pasme zakonisht mund te kete ngecje me pjesen e prapme te makines."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -338,7 +338,7 @@ const pyetje: Test[] = [
           "Une rrezikoj te me terhiqet patenta e shoferit nese largohem nga vendodhja pa kontaktuar pronarin e makines.",
           "Mjafton qe une te kontaktoj pronarin e makines kur te arrij ne shtepi."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -350,7 +350,7 @@ const pyetje: Test[] = [
           "Ne rrugen e rezervuar per automjete motorrike lejohet te kthehesh ne krahun e kundert te drejtimit.",
           "Ne rrugen e rezervuar per automjete motorrike mund te kete automjete ne drejtim te kundert qe qarkullojne ne te njejten karrexhate (pjesa e rruges e destinuar per automjete)."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -362,7 +362,7 @@ const pyetje: Test[] = [
           "Une vozis me benzine me oktan te larte.",
           "Une vozis me benzine me oktan te ulet."
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -374,7 +374,7 @@ const pyetje: Test[] = [
           "Nje bicikleteje me motorr",
           "Nje makine me shtepi-rimorkio"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -386,7 +386,7 @@ const pyetje: Test[] = [
           "Une frenoj butesisht dhe kthej me force timonin per tu kthyer shpejt lart ne rruge.",
           "Liroj gazin dhe drejtoj me kujdes makinen lart ne rruge."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -421,7 +421,7 @@ const pyetje: Test[] = [
           "Nje bicikleteje me motorr",
           "Nje makine me shtepi-rimorkio"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -433,7 +433,7 @@ const pyetje: Test[] = [
           "Afersisht 36 metra",
           "Afersisht 54 metra"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -445,7 +445,7 @@ const pyetje: Test[] = [
           "Koha e reagimit shkurtohet.",
           "Njeriu ka shikim me te keqe prapa ne pasqyren anesore."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -457,7 +457,7 @@ const pyetje: Test[] = [
           "E shenjoj vendin e aksidentit, e zhvendos drerin nese dreri eshte ne vend qe perbene rrezik per trafikun dhe njoftoj perplasjen ne polici.",
           "E shenjej vendin e aksidentit dhe pastaj e marr drerin me vete nga vendi i aksidentit."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -469,7 +469,7 @@ const pyetje: Test[] = [
           "Une i jap gaz me shume se normalisht.",
           "Une e ngre nderruesin e shpejtesive(pedalin e nderrimit te marsheve) me shpejt se normalisht."
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -480,7 +480,7 @@ const pyetje: Test[] = [
           "Vetem demtimet e automjetit tim.",
           "Vetem demtimet e automjetit te pales tjeter."
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -492,7 +492,7 @@ const pyetje: Test[] = [
           "Kur shoferi, eshte nje femer qe ka meshkuj si pasagjere.",
           "Kur shoferi eshte nje mashkull qe ka meshkuj si pasagjere."
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -515,7 +515,7 @@ const pyetje: Test[] = [
           "Te ece permbi rruge",
           "Te qendroje pa levizur dhe te me lejoje mua te kaloje me se pari"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -549,7 +549,7 @@ const pyetje: Test[] = [
           "Jo, vetem personat qe kane pengesa ne levizje(handikape) eshte e lejuar te vozisi ne kete rruge",
           "Po, meqenese ai banon ne kete adrese"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -561,7 +561,7 @@ const pyetje: Test[] = [
           "Mbeshtetes i kokes(mbeshtetesi i qafes)",
           "Sistemi kunder rreshqites(kunder shkarjes)"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -584,7 +584,7 @@ const pyetje: Test[] = [
           "Une e ul shpejtesine ne kohen e duhur",
           "Une e vendos veturen ne anen e djathte"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -596,7 +596,7 @@ const pyetje: Test[] = [
           "Mprehtesia e shikimit zvogelohet dhe fusha e shikimit ngushtohet",
           "Mprehtesia e shikimit rritet dhe fusha e shikimit zvogelohet"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -631,7 +631,7 @@ const pyetje: Test[] = [
           "Une e shoh qe llampa kontrolluese ABS vezullon(pulson) me ngjyre te kuqe",
           "Une degjoj nje tingull pulesues dhe ndjej vibrimet(dridhjet) nga pedalja e frenimit"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -677,7 +677,7 @@ const pyetje: Test[] = [
           "Ne zona banimi me vila",
           "Ne vende per trajnimin e shofereve"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -689,7 +689,7 @@ const pyetje: Test[] = [
           "Une frenoj butesisht dhe e kthej makinen me force perseri ne rruge",
           "Leshoj gazin dhe e drejtoj makinen me kujdes ne rruge"
         ],
-        correctAnswer: 0,
+        correctAnswer: 3,
         image: null,
       },
       {
@@ -701,7 +701,7 @@ const pyetje: Test[] = [
           "1 dhjetor - 31 mars edhe nese nuk mbreterojne kushtet rrugore dimerore",
           "1 tetor - 30 prrill nese mbreterojne kushtet rrugore dimerore"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -735,7 +735,7 @@ const pyetje: Test[] = [
           "Une perdor bllokimin e shpejtesis",
           "Une nderroj nje shpejtesi me te vogel ne te gjitha shpatet"
         ],
-        correctAnswer: 0,
+        correctAnswer: 1,
         image: null,
       },
       {
@@ -769,7 +769,7 @@ const pyetje: Test[] = [
           "Po, nese vozish me shpejtesi te madhe harxhohen gomat me pak sesa sikur te vozisja me shpejtesi te vogel",
           "Po, nese vozis me pershpejtime te forta dhe frenime te fortarritet konsumimi(harxhimi) i gomave"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -781,7 +781,7 @@ const pyetje: Test[] = [
           "Po, une gjithmon duhet ta siguroj ngarkesen",
           "Jo, meqenese rimorkioja eshte e mbuluar nga siper"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -792,7 +792,7 @@ const pyetje: Test[] = [
           "Nje shofer qe shkel kufizimet e shpejtesise per te ndjekur ritmin e trafikut",
           "Nje shofer qe ngadaleson automjetin per te treguar se ai ka detyrim te dhenies se perparesise"
         ],
-        correctAnswer: 0,
+        correctAnswer: 2,
         image: null,
       },
       {
@@ -816,7 +816,7 @@ const pyetje: Test[] = [
           "450m",
           "600m"
         ],
-        correctAnswer: 2,
+        correctAnswer: 3,
         image: null,
       },
     ],

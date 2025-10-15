@@ -1,6 +1,9 @@
+'use client'
+
 import { Question } from "@/lib/types";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface QuestionProps {
   question: Question;
@@ -21,11 +24,12 @@ const QuestionComponent: React.FC<QuestionProps> = ({
 
       <div className="flex flex-col md:flex-row items-start gap-8">
         {question.image && (
-          <div className="mb-6 rounded-lg overflow-hidden min-w-[300px]">
-            <img
+          <div className="rounded-lg overflow-hidden">
+            <Image
               src={question.image}
-              alt="Question illustration"
-              className="w-full h-[300px] object-cover aspect-auto"
+              alt={question.question}
+              width={320}
+              height={300}
             />
           </div>
         )}

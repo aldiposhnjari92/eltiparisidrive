@@ -10,7 +10,7 @@ interface TestCardProps {
 const TestCard: React.FC<TestCardProps> = ({ test, onStart }) => {
   return (
     <div
-      className="border-2 border-gray-200 rounded-md p-4 cursor-pointer hover:border-blue-800 trnsition-all min-w-[220px]"
+      className="flex flex-col w-[40%] sm:max-w-[220px] border-2 border-gray-200 rounded-md p-4 cursor-pointer hover:border-blue-800 trnsition-all flex-grow"
       onClick={() => onStart(test)}
     >
       <div className="flex flex-col items-center mb-4">
